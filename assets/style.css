@@ -74,27 +74,23 @@ header li {
 .panel1:hover {
   transform: scale(1.5);
 }
-.about-me {
+.about-me-flex {
   display:flex;
   justify-content: space-evenly;
   min-height: 13%;
   padding:50px;
 }
 
-.about-me-flex {
-  display:flex;
-}
 .about-me-title {
   flex-direction:row;
   text-align:center;
+  padding: 30px 0;
   width:25%;
-  padding-top: 12%;
   font-family: 'redressed';
   font-size: 150%;
   color:var(--Greengrey);
   border-right: 4px solid var(--Greengrey)
 }
-
 
 .about-me-content {
   flex-direction:row;
@@ -105,31 +101,42 @@ header li {
 }
 
 .visual-boxes-flex {
-  display:flex
-  flex-wrap:nowrap; 
-  
+  display:flex;
+  flex-wrap:wrap;
+  padding:20px;
+  flex-shrink: 2 3 4 5;
 }
 
-.work-title { 
+section h3 {
+  border: 3px solid var(--Greengrey);
+  background-color:aquamarine;
+}
+
+.work-title {
   flex-direction:row;
   text-align:center;
   width:25%;
-  padding-top: 5%;
   font-family: 'redressed';
+  margin-top:5%;
   font-size: 150%;
   color:var(--Greengrey);
-  border-right: 4px solid var(--Greengrey)
+  border-right: 4px solid var(--Greengrey);
 }
 
 .large-panel {
   flex-direction:row;
-  width:75%;
   text-align: center;
-  padding:10px;
+  width: 70%;
   background-image: url("./blackforest.PNG");
-
+  border: 3px solid var(--Greengrey);
+  
 }
-
+.large-panel p {
+  
+  border: 3px solid var(--Greengrey);
+  bottom: 0;
+  right: 0;
+}
 
 
 
