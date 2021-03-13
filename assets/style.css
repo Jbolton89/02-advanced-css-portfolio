@@ -1,168 +1,251 @@
+@charset "utf-8";
 :root{
   --Gainsboro: gainsboro;
   --Greengrey:darkslategray;
 
 }
-body{
-    display:flex;
-    flex-direction: column;
-    line-height: 1.3;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:1rem;
-    justify-content: space-between;
-    background-color: lemonchiffon;
-
+body {
+	background-color: lemonchiffon;
+	margin: 0px;
 }
+
+h2{
+	font-family: 'redressed';
+	font-size: 1.6em;
+}
+
 header{
-  flex:flex;
-  padding: 10px;
-  background-color: darkslategray;
-  color: var(--Gainsboro);
+	background-color: var(--Greengrey);
+	max-height: 80px;
+}
 
-}
-.flex-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-.my-name{
-  padding: (20px, 20px);
-  flex-direction:row;
-  font-size: 50px;
-  font-family: 'redressed';
-}
-.topright-links {  
-  flex-direction:row;
-  justify-content: flex-end;
-  font-family: 'redressed';
-  color:var(--Gainsboro);
-  }
 
-nav a:visited{
-  color: rgb(11, 127, 228); 
-}
-nav a:hover{ 
-  color:rgb(148, 39, 93);
-  justify-content:flex-end
-}
 header li {
-  display:flex;
-  justify-content:right;
 	display: inline;
-	padding: 0px 10px 20px 50px;
 	float:right;
-
+	padding: 20px;
 }
-.hero {
-  display:flex;
-  align-items: center;
-  align-content:center;
-  justify-content:flex-end;
-  background-image: url("./blacksand.PNG");
-  width:100%;
-  min-height:7cm;
+header a {
+	color: var(--Gainsboro);
+	font-size: 2em;
+	font-family: 'redressed';
+	text-decoration: none;
 }
-.panel1 {
- align-self: flex-end;
- border: var(--Gainsboro);
- border-style: solid;
- padding:15px;
- margin:20px;
- color: darkslategray;
- background-color: var(--Gainsboro);
-}
-.panel1:hover {
-  transform: scale(1.5);
-}
-.about-me-flex {
-  display:flex;
-  justify-content: space-evenly;
-  min-height: 13%;
-  padding:50px;
+header a:hover {
+	color: #FFFFFF;
+	text-decoration:underline;
 }
 
-.about-me-title {
-  flex-direction:row;
-  text-align:center;
-  padding: 30px 0;
-  width:25%;
-  font-family: 'redressed';
-  font-size: 150%;
-  color:var(--Greengrey);
-  border-right: 4px solid var(--Greengrey)
+.my-name{
+	padding: 20px;
+	font-family: 'redressed';
+	color:var(--Gainsboro);
+	font-size: 3em;
 }
 
-.about-me-content {
-  flex-direction:row;
-  width:75%;
-  text-align: center;
-  padding:30px;
-  color:var(--Greengrey);
+.green{
+	background-color: #5c9393;
 }
 
-.visual-boxes-flex {
-  display:flex;
-  flex-wrap:wrap;
-  padding:20px;
-  flex-shrink: 2 3 4 5;
+/*---------- Flexbox stuff ----------*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+	min-height: 100px;
+	
 }
 
-section h3 {
-  border: 3px solid var(--Greengrey);
-  background-color:aquamarine;
-}
-
-.work-title {
-  flex-direction:row;
-  text-align:center;
-  width:25%;
-  font-family: 'redressed';
-  margin-top:5%;
-  font-size: 150%;
-  color:var(--Greengrey);
-  border-right: 4px solid var(--Greengrey);
-}
-
-.large-panel {
-  flex-direction:row;
-  text-align: center;
-  width: 70%;
-  background-image: url("./blackforest.PNG");
-  border: 3px solid var(--Greengrey);
-  
-}
-.large-panel p {
-  
-  border: 3px solid var(--Greengrey);
-  bottom: 0;
-  right: 0;
-}
-
-
-
-/* Why cant I get this to work? how to type like this in html? */
-/* What does flex do - flexbox */
-/* Do i need to list all the elements and then the class and id selectors */
-
-
- /* }
 .flex-items:nth-child(1) {
   display: block;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  background-color: aqua;
-	min-height: 100vh;
+  width: 25%;
 }
 
 .flex-items:nth-child(2) {
   display: block;
-  flex-grow: 3;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  background-color: aquamarine;
-} */
+  width: 75%;
+}
+		
+.flex-single {
+	display: block;
+	width:100%;
+	padding:20px 20px 10px 20px;
+}
+		
+.flex-double {
+	display: block;
+	width:50%;
+	
+}
+.flex-double:nth-child(1) {
+  padding:10px 10px 10px 20px;
+}
+
+.flex-double:nth-child(2) {
+  padding:10px 20px 10px 10px;
+}
+
+
+.flex-double img, .flex-single img{
+	width: 100%; 
+	height:auto;
+}
+
+/*---------- Hero section and side ----------*/
+.hero{
+	padding: 0px !important;
+}
+
+.hero img{
+	width: 100%; height:300px !important;
+}
+
+.hero-title:hover {
+  transform: scale(1.5);
+}
+
+.hero-title {
+	position: absolute;
+	bottom: 20%;
+	padding: 20px;
+	min-width: 30%;
+	border: var(--Gainsboro);
+ 	border-style: solid;
+	background-color: var(--Gainsboro);
+	color: var(--Greengrey);
+	right: 0px;
+}
+
+.hero-image {
+	transition: .5s ease;
+}
+		
+.line{
+	border-right: 2px solid var(--Greengrey);
+}
+		
+.title{
+	padding: 10px 20px 0 0 ; 
+	text-align: right; 
+	font-weight: bold;
+	color:var(--Greengrey);
+}
+
+/*---------- Skills boxes ----------*/
+.box{
+	position: relative;
+}	
+
+.box-title {
+	position: absolute;
+	bottom: 20%;
+	padding: 20px;
+	min-width: 30%;
+	background-color:var(--Greengrey);
+	color: var(--Gainsboro);
+	font-size:1.4em;
+	font-family: 'redressed';
+}
+
+.box-image {
+	transition: .5s ease;
+	border: 4px solid var(--Greengrey);
+}		
+		
+.box-image:hover{
+	opacity: 0.3;
+	filter: alpha(opacity=50);
+}	
+
+.subtitle {
+	font-size: 0.7em;
+	font-weight: normal;
+	font-family: initial;
+}
+.spacer{
+	padding:10px 0;
+}
+
+.footer-references ul{
+	display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-references li{
+	display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+.footer-references{
+	padding: 20px;
+	font-size: 1.5em;
+	font-family: 'redressed';
+}
+
+.footer-references a{
+	color: var(--Greengrey);
+}
+
+
+				
+@media screen and (max-width: 768px)
+{
+	.flex-container {
+	flex-wrap: wrap;
+	}
+	.flex-items:nth-child(1) {
+	  width: 100%;
+	}
+
+	.flex-items:nth-child(2) {
+	  width: 100%;
+	}
+	
+	.flex-double {
+	width:100%;
+	}
+	.flex-double:nth-child(1) {
+  padding:10px;
+	}
+
+	.flex-double:nth-child(2) {
+	  padding:10px;
+	}
+	.title{
+		text-align: left;
+		padding: 10px 20px 0 15px;
+	}
+	.footer-references ul{
+		display:block;
+	}
+	.line {
+	border-right: none;
+		border-left: 2px solid var(--Greengrey);
+}
+}
+
+@media screen and (max-width: 576px)
+{
+	.flex-container {
+	flex-wrap: wrap;
+	}
+	.flex-items:nth-child(1) {
+	  width: 100%;
+	}
+
+	.flex-items:nth-child(2) {
+	  width: 100%;
+	}
+	
+	.flex-double {
+	width:100%;
+	}
+}

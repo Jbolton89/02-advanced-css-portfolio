@@ -1,99 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Bolton</title>
-    <link rel="stylesheet" href="./Assets/reset.css" />
-    <link rel="stylesheet" href="./Assets/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<meta charset="utf-8">
+<title>Jason Bolton Portfolio</title>
+	<link rel="stylesheet" href="assets/reset.css">
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
- <header>
-  <div class="flex-header">
-    <div class="my-name">Jason Bolton
-    </div>
-  <nav class="topright-links">
-    <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Recent Work</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Resources</a></li>
-    </ul>
-  </nav>
-</div>
- </header> 
- <!-- End header -->
- <!-- Start hero container -->
- <div class="hero">
-  <div class="panel1">Customised Panel
-    </div>
- </div>
-<!-- end hero container --> 
-<!-- Start 'About me' coontainer -->
-<section class="about-me-flex">
-    <div class = "about-me-title">
-      <h2>About me</h2>
-    </div>
-    <div class="about-me-content">
-      <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</h2>
-    </div>
-    </section>
-  <!-- End 'About me' container -->
-  <!-- Start of main panels (section) -->
-  <section class="visual-boxes-flex"> 
-      <div class="work-title">
-        <h2>Work</h2>
-      </div>
-      <div class="large-panel"><p>Here is my Work</p></div>
-      <section>
-      <h3>Surf Report
-        <p>MERN Stack</p>
-      </h3>
-    </section>
-    <section>
-      <h3>LED Wall
-         <p>Note/IoT</p>
-      </h3>
-    </section>
-    <section>
-      <h3>Calculator
-  <p>React/Javascript/CSS</p>
-      </h3>
-    </section>
-  <section>
-        <h3>Pastel Puzzels
-        <p>MERN Stack</p>
-        </h3>
-      </section>
-    <section>
-          <h3>Run Buddy
-     <p>HTML/CSS</p>
-   </h3>
-  </section>
-</section>
- </div>
- <div>
-   <h2>
-     <p>
-     </p>
-   </h2>
-</div>  
-</section>
-<footer>
-  <h2>Contact <br>Me
-  </br>
-   <nav class="footer-references">
-     <ul>
-       <li>0404849716</li>
-       <li><a href="http://realultimatepower.net/">Jasonbolton89@gmail.com</a></li>
-       <li><a href='https://github.com/Jbolton89/01-Refactoring-Existing-Code'>GitHub</a></li>
-       <li><a href='https://twitter.com/?lang=en'>twitter</a></li>
-       <li><a href='https://www.spotify.com/au/'>spotify</a></li>
-     </ul>
-   </nav>
-  </h2>
-</footer>
+	<!-- Header	-->
+	<header>
+		<section class="flex-container">
+			<div class="flex-items">
+				<h1 class="my-name">Jason Bolton
+				</h1>
+			</div>
+			<div class="flex-items">
+			<nav>
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#work">Recent Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#resources">Resources</a></li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+	</header>
+	<!-- End Header	-->
+	
+	<!-- Hero container	-->
+	<section class="flex-container">
+		<div class="flex-single hero">
+			<div class="box">
+				<img class="hero-image" src="assets/blacksand.PNG" alt=""/>
+				<div class="hero-title">Customise Panel</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Hero container	-->
+	
+	
+	<!-- Main container	-->
+	
+	<!-- Top Row Headers	-->
+	<section class="flex-container">
+		<!-- Left Column Headers	-->
+		<div class="flex-items line">
+			<h2 id="about" class="title">About Me</h2>
+		</div>
+		<!-- End Left Column Headers	-->
+		<!-- Right Column	-->
+		<div class="flex-items">
+			<div class="flex-container">
+				<div class="flex-single">
+					<div class="box">
+						<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 		</p>
+							<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
+					</div>
+				</div>
+		   </div>
+		</div>
+		<!-- End Right Column	-->
+	</section>
+	<!-- End Top Row Headers	-->
+	
+	<div class="spacer"></div>
+	
+	<!-- Another Section	-->
+	<section class="flex-container">
+		<!-- Left Column Headers	-->
+		<div class="flex-items line">
+			<h2 id="work" class="title">Work</h2>
+		</div>
+		<!-- End Left Column Headers	-->
+		<!-- Right Column	-->
+		<div class="flex-items">
+			<div class="flex-container">
+			  <div class="flex-single">
+					<div class="box">
+						<img class="box-image" src="assets/blackforest.jpg" alt=""/>
+						<div class="box-title">Surf Report<br/><span class="subtitle">MERN Stack</span></div>
+					</div>
+				</div>
+			</div>
+		  <div class="flex-container">
+				<div class="flex-double">
+					<div class="box">
+						<img class="box-image" src="assets/skills.jpg" alt=""/>
+						<div class="box-title">LED Wall<br/><span class="subtitle">Note/IoT</span></div>
+					</div>
+				</div>
+				<div class="flex-double">
+					<div class="box">
+						<img class="box-image" src="assets/skills.jpg" alt=""/>
+						<div class="box-title">Calculator<br/><span class="subtitle">React/Javascript/CSS</span></div>
+					</div>
+			  	</div>
+		   </div>
+			<div class="flex-container">
+				<div class="flex-double">
+					<div class="box">
+						<img class="box-image" src="assets/skills.jpg" alt=""/>
+						<div class="box-title">Pastel Puzzles<br/><span class="subtitle">MERN Stack</span></div>
+					</div>
+				</div>
+				<div class="flex-double">
+					<div class="box">
+						<img class="box-image" src="assets/skills.jpg" alt=""/>
+						<div class="box-title">Run Buddy<br/><span class="subtitle">HTML/CSS</span></div>
+					</div>
+			  	</div>
+		   </div>
+		</div>
+		<!-- End Right Column	-->
+	</section>
+	<!-- End Another Section -->
+	
+	<div class="spacer"></div>
+	
+	<!-- Another Section	-->
+	<footer class="flex-container green">
+		<!-- Left Column Headers	-->
+		<div class="flex-items line">
+			<h2 id="contact" class="title">Contact Me</h2>
+		</div>
+		<!-- End Left Column Headers	-->
+		<!-- Right Column	-->
+		<div class="flex-items">
+		  <nav class="footer-references">
+			 <ul>
+				<li><a href="tel:0404849716">0404849716</a></li>
+			   <li><a href="http://realultimatepower.net/">Jasonbolton89@gmail.com</a></li>
+			   <li><a href="https://github.com/Jbolton89/01-Refactoring-Existing-Code">GitHub</a></li>
+			   <li><a href="https://twitter.com/?lang=en">twitter</a></li>
+			   <li><a href="https://www.spotify.com/au/">spotify</a></li>
+			 </ul>
+		   </nav>
+		</div>
+		<!-- End Right Column	-->
+	</footer>
+	<!-- End Another Section -->
+	
+	<!-- End Main container	-->
 </body>
 </html>
