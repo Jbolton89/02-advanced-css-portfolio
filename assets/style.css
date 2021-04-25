@@ -166,7 +166,7 @@ header a:hover {
 	font-family: initial;
 }
 .spacer{
-	padding:10px 0;
+	padding:20px 0;
 }
 
 .footer-references ul{
@@ -175,7 +175,7 @@ header a:hover {
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0, 10;
 }
 
 .footer-references li{
@@ -193,7 +193,6 @@ header a:hover {
 .footer-references a{
 	color: var(--Greengrey);
 }
-
 
 				
 @media screen and (max-width: 768px)
