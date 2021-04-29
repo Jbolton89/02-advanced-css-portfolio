@@ -203,11 +203,9 @@ header a:hover {
 	.flex-items:nth-child(1) {
 	  width: 100%;
 	}
-
 	.flex-items:nth-child(2) {
-	  width: 100%;
+		width:100%;
 	}
-	
 	.flex-double {
 	width:100%;
 	}
