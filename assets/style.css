@@ -41,6 +41,7 @@ header a:hover {
 	font-family: 'redressed';
 	color:var(--Gainsboro);
 	font-size: 3em;
+	z-index: 1;
 }
 
 .green{
@@ -105,6 +106,12 @@ header a:hover {
 
 .hero-title:hover {
   transform: scale(1.5);
+}
+
+.jumbotron-background { 
+	background-image: url('./blackforesthero.jpg'); 
+	background-size: cover;
+
 }
 
 .hero-title {
@@ -224,9 +231,10 @@ header a:hover {
 		display:block;
 	}
 	.line {
-	border-right: none;
+		border-right: none;
 		border-left: 2px solid var(--Greengrey);
-}
+	}
+	
 }
 
 @media screen and (max-width: 576px)
@@ -245,4 +253,5 @@ header a:hover {
 	.flex-double {
 	width:100%;
 	}
+	
 }

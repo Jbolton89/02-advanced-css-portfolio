@@ -6,4 +6,3 @@ aboutMeLink.addEventListener("click", function (){
         behavior: "smooth"
     });
 })
-console.log(window.object);
