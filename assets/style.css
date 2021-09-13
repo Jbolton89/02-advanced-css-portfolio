@@ -74,6 +74,7 @@ header a:hover {
 	display: block;
 	width:100%;
 	padding:20px 20px 10px 20px;
+	font-size:1.2em;
 }
 		
 .flex-double {
@@ -96,6 +97,7 @@ header a:hover {
 }
 
 /*---------- Hero section and side ----------*/
+
 .hero{
 	padding: 0px !important;
 }
@@ -144,6 +146,7 @@ header a:hover {
 /*---------- Skills boxes ----------*/
 .box{
 	position: relative;
+	/* overflow-wrap: break-word; */
 }	
 
 .box-title {
@@ -151,10 +154,12 @@ header a:hover {
 	bottom: 20%;
 	padding: 20px;
 	min-width: 30%;
+	max-width: 50%;
 	background-color:var(--Greengrey);
 	color: var(--Gainsboro);
 	font-size:1.4em;
 	font-family: 'redressed';
+	overflow-wrap: break-word;
 }
 
 .box-image {
